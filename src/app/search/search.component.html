@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AtAlternativeInteractionSolution</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div id='genre'>{{searchGenre}}</div>
+  <div id='pageNum'>Page {{currentPage}}</div>
+  <a class="prevButton">&laquo; Previous</a>
+  <a class="nextButton">Next &raquo;</a>
+  <div id='mainbox' onclick="openMenu()">&#9776;</div>
+  <div id="menu" class="sidemenu">
+    <h2 class="menu-title">Browse by category</h2>
+    <a id="trending" href='http://localhost:4200/'>Trending</a>
+    <a id="action" href='search/action'>Action</a>
+    <a id="adventure" href='search/adventure'>Adventure</a>
+    <a id="animation" href='search/animation'>Animation</a>
+    <a id="commedy" href='search/commedy'>Commedy</a>
+    <a id="drama" href='search/drama'>Drama</a>
+    <a id="fantasy" href='search/fantasy'>Fantasy</a>
+    <a id="horror" href='search/animation'>Horror</a>
+    <a id="mystery" href='search/mystery'>Mystery</a>
+    <a id="romance" href='search/romance'>Romance</a>
+    <a id="thriller"href='search/thriller'>Thriller</a>
+    <a class="closebtn" onclick="closeMenu()">&times;</a>
+  </div>
+
+  <main id="main"></main> 
+  <div id='pageNum'>Page {{currentPage}}</div>
+  <a class="prevButton">&laquo; Previous</a>
+  <a class="nextButton">Next &raquo;</a>
+  <br>
+  <app-handtracker class="handtracker" (onPrediction)="prediction($event)"></app-handtracker>
+  <div [innerHTML]="gesture"></div>
+
+</body>
+</html>
