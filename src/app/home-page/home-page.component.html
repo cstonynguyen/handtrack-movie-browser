@@ -10,8 +10,8 @@
 <body>
   <div id='genre'>Trending</div>
   <div id='pageNum'>Page {{currentPage}}</div>
-  <a class="prevButton">&laquo; Previous</a>
-  <a class="nextButton">Next &raquo;</a>
+  <a id="prevButton">&laquo; Previous</a>
+  <a id="nextButton">Next &raquo;</a>
   <div id='mainbox' onclick="openMenu()">&#9776;</div>
   <div id="menu" class="sidemenu">
     <h2 class="menu-title">Browse by category</h2>
@@ -31,8 +31,8 @@
 
   <main id="main"></main> 
   <div id='pageNum'>Page {{currentPage}}</div>
-  <a class="prevButton">&laquo; Previous</a>
-  <a class="nextButton">Next &raquo;</a>
+  <a id="prevButton">&laquo; Previous</a>
+  <a id="nextButton">Next &raquo;</a>
   <br>
   <app-handtracker class="handtracker" (onPrediction)="prediction($event)"></app-handtracker>
   <div [innerHTML]="gesture"></div>

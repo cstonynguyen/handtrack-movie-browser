@@ -1,6 +1,6 @@
 # Handtrack Movie Browser
 
-This is a web application that allows users to find movies like any generic movie browsing websites, but in addition it supports some basic navigation through the website through detected hand gestures using the [Handtrack libarary](https://github.com/victordibia/handtrack.js/)
+This is a web application that allows users to find movies like any generic movie browsing websites, but it also supports basic navigation through the website through detected hand gestures using the [Handtrack libarary](https://github.com/victordibia/handtrack.js/)
  
 ## Getting Started
 

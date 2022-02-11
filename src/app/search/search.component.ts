@@ -167,40 +167,40 @@ export class SearchComponent implements OnInit {
         this.menuIndex = this.menuIndex % 11;
         switch (this.menuIndex) {
           case 0:
-            window.location.href = "http://localhost:4200/";
+            window.location.href = "";
             break;
           case 1:
-            window.location.href = "http://localhost:4200/search/action";
+            window.location.href = "search/action";
             break;
           case 2:
-            window.location.href = "http://localhost:4200/search/adventure";
+            window.location.href = "search/adventure";
             break;
           case 3:
-            window.location.href = "http://localhost:4200/search/animation";
+            window.location.href = "search/animation";
             break;
           case 4:
-            window.location.href = "http://localhost:4200/search/commedy";
+            window.location.href = "search/commedy";
             break;
           case 5:
-            window.location.href = "http://localhost:4200/search/drama";
+            window.location.href = "search/drama";
             break;
           case 6:
-            window.location.href = "http://localhost:4200/search/fantasy";
+            window.location.href = "search/fantasy";
             break;
           case 7:
-            window.location.href = "http://localhost:4200/search/horror";
+            window.location.href = "search/horror";
             break;
           case 8:
-            window.location.href = "http://localhost:4200/search/mystery";
+            window.location.href = "search/mystery";
             break;
           case 9:
-            window.location.href = "http://localhost:4200/search/romance";
+            window.location.href = "search/romance";
             break;
           case 10:
-            window.location.href = "http://localhost:4200/search/thriller";
+            window.location.href = "search/thriller";
             break;
           default:
-            window.location.href = "http://localhost:4200/";
+            window.location.href = "";
         }
       }
     }
