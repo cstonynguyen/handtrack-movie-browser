@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 `npm install -g @angular/cli` 
 
-run `ng serve --open` and the program should open on your local browser `http://localhost:4200/`
+Navigate to project folder and run `npm start` in terminal and the program should open on your local browser `http://localhost:4200/`
 
 This web app needs the browser to have access to your webcam in order to detect hand gestures, so when first running the web app make sure to click allow access to camera
 
@@ -21,4 +21,6 @@ The currently supported hand gestures and their corresponding function is as fol
 6. two hands pointing = scroll down
 7. one hand open, one hand pointing = next page
 8. one hand closed, one hand pointing = prev page
+
+Demo of site hand navigation (early build): https://www.youtube.com/watch?v=Bw_nLCrD9ts
 

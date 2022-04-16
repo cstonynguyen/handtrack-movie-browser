@@ -26,12 +26,17 @@ export class SearchComponent implements OnInit {
       console.log(data.results);
       let title;
       let imgUrl;
+      let voteAvg;
       for (var i = 0; i < data.results.length; ++i)
       {
         title = data.results[i].title;
         imgUrl = "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
+        voteAvg = data.results[i].vote_average;
         (document.getElementById('main') as HTMLElement).innerHTML += 
-        "<div class='movie'> <img class='movie-img' src='" + imgUrl + "'alt= '" + title + "' </div> </div>";
+        "<div class='movie'> " +
+        "<img class ='movie-img' src ='" + imgUrl +"' alt= '" + title + "'>" +
+        "<div class ='movie-info'> <h3>" + title + "</h3>" +
+        "<span class = 'rating'>" + voteAvg + "</span> </div> </div>";
       }
     })
   }
@@ -44,10 +49,12 @@ export class SearchComponent implements OnInit {
         console.log(data.results);
         let title;
         let imgUrl;
+        let voteAvg;
         (document.getElementById('main') as HTMLElement).innerHTML = "";
         for (var i = 0; i < data.results.length; ++i) {
           title = data.results[i].title;
           imgUrl = "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
+          voteAvg = data.results[i].vote_average;
           (document.getElementById('main') as HTMLElement).innerHTML +=
             "<div class='movie'> <img class='movie-img' src='" + imgUrl + "'alt= '" + title + "' </div> </div>";
         }
@@ -63,9 +70,11 @@ export class SearchComponent implements OnInit {
         console.log(data.results);
         let title;
         let imgUrl;
+        let voteAvg;
         (document.getElementById('main') as HTMLElement).innerHTML = "";
         for (var i = 0; i < data.results.length; ++i) {
           title = data.results[i].title;
+          voteAvg = data.results[i].vote_average;
           imgUrl = "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
           (document.getElementById('main') as HTMLElement).innerHTML +=
             "<div class='movie'> <img class='movie-img' src='" + imgUrl + "'alt= '" + title + "' </div> </div>";
